@@ -1,0 +1,73 @@
+# Lauren’s site settings. Edit biography content in _pages/about.md.
+locale: en-US
+site_theme: default
+title: Lauren Michelle Harvey
+name: Lauren Michelle Harvey
+description: Ph.D. candidate in sociology at Duke University studying race, inequality, and identity in digital spaces.
+url: https://lmharvey.com
+baseurl: ""
+repository: laurenmharvey/laurenmharvey.github.io
+
+author:
+  avatar: lauren-harvey.png
+  name: Lauren Michelle Harvey
+  bio: Ph.D. Candidate in Sociology
+  employer: Duke University
+  email: lauren.harvey@duke.edu
+  orcid: https://orcid.org/0000-0001-8833-124X
+
+breadcrumbs: false
+words_per_minute: 160
+atom_feed:
+  hide: true
+analytics:
+  provider: false
+comments:
+  provider: false
+og_image: lauren-harvey.png
+
+include:
+  - _pages
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - LICENSE-ACADEMICPAGES
+  - THEME.md
+  - vendor
+  - node_modules
+  - package.json
+  - package-lock.json
+  - scripts
+  - assets/js/_main.js
+  - assets/js/plugins
+  - assets/js/vendor
+encoding: utf-8
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+sass:
+  sass_dir: _sass
+  style: compressed
+permalink: /:title/
+timezone: America/New_York
+plugins:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jemoji
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
